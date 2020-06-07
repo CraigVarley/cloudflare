@@ -2,7 +2,7 @@
     background-color:#41444C;
 }
 
-/* header & nav */
+/* header & nav stuff */
 
 header {
     height:85px;
@@ -11,24 +11,93 @@ header {
     margin:auto;
     display:flex;
     align-items:center;
-    color:white;
+    color:#e3e3e4;
     font-family: sans-serif;
+    box-sizing:border-box;
+    margin-bottom:100px;
 }
 
 header * {
     display:inline;
 }
 
-header h1 {
-    padding-left: 10px;
+/* vertical centering as row using flex and row direction */
+
+div .top-logo {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width:20%;
+    text-align: center;
+
 }
 
-header img {
-    height:100%;
-    margin-left:45px;
+div .top-logo img {
+    height:4rem;
+    display:inline;
+}
+
+div .top-logo h1 {
+    padding-left: 10px;
+    font-size: x-large;
+    display:inline;
+    font-weight: normal;
+}
+
+div .top-logo span {
+    font-weight: 700;
+    letter-spacing:.001rem;
+}
+
+header nav {
+    width:60%;
+    text-align:center;
 }
 
 header ul {
     text-align: center;
 }
 
+header ul li {
+    margin-right:20px;
+    font-weight:500;
+}
+
+div .login-button-top {
+    width:20%;
+}
+
+div .login-button-top button {
+    color:#e3e3e4;
+    background-color:#479ff1;
+    border-radius:20px;
+    border:none;
+    padding:6px 12px;
+    width:110px;
+    font-size:large;
+}
+
+/* main login box stuff */
+
+.login-box {
+    width:60%;
+    border:white 1px solid;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+section .features,
+section .login {
+    border:white 1px solid;
+}
+
+
+/* social media images */
+
+.social-logo {
+    height:50px;
+    width:50px;
+}
