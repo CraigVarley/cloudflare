@@ -62,6 +62,10 @@ header ul li {
     font-weight:500;
 }
 
+header ul li:hover {
+    color:#479ff1;
+}
+
 div .login-button-top {
     width:20%;
 }
@@ -74,6 +78,11 @@ div .login-button-top button {
     padding:6px 12px;
     width:110px;
     font-size:large;
+}
+
+div .login-button-top button:hover {
+    background-color:#cfcfcf;
+    color:#479ff1;
 }
 
 /* main login box stuff */
@@ -92,12 +101,13 @@ div .login-button-top button {
     background-image: url('images/bg-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display:flex;
     flex-direction: column;
 }
 
 .features-bg {
-    background-color: rgba(71,159,241, 0.8);
+    background-color: rgba(71,159,241, 0.9);
 }
 
 .features-logo {
@@ -176,6 +186,7 @@ div .login-button-top button {
     padding:6px 12px;
     width:110px;
     font-size:large;
+    box-shadow: 0 2px #cfcfcf;
 }
 
 
@@ -187,12 +198,12 @@ div .login-button-top button {
     float:right;
     padding-top:0px;
     margin-top:20px;
-    /* box-shadow: 10px #cfcfcf; */
 }
 
 .social-logo {
     height:25px;
     width:25px;
+    box-shadow: 0 2px #cfcfcf;
 }
 
 .button-div {
@@ -225,8 +236,12 @@ div .login-button-top button {
 
 .input-box {
     border:none;
-    border-bottom:5px solid #479ff1;
+    border-bottom:5px solid #cfcfcf;
     width:80%;
+}
+
+.input-box:hover {
+    border-bottom:5px solid #479ff1;
 }
 
 .pw-recover {
